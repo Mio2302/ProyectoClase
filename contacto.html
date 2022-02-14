@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpart" content="width-device-width, initial-scale=1.0">
+    <title>Elementos de formulario</title>
+</head>
+
+<body bgcolor="pink">
+
+    <header>
+        <h1>
+            Contacto || Elementos de formulario
+        </h1>
+    </header>
+
+    <nav>
+        <a href="P2.html">HOME</a>|
+        <a href="pasatiempos.html">pasatiempos</a>
+        <a href="fotos.html">Fotos|</a>
+        <a href="videos.html">Videos|</a>
+        <a href="contacto.html">Contactame</a>
+    </nav>
+
+
+    <main>
+        <section>
+            <article>
+                <form name="frmDatos" id="frmDatos" method="post" action="#">
+                    <fieldset style="width: 500px;">
+                        <legend>Elementos de formulario</legend>
+                        <table>
+                            <tr>
+                                <th>
+                                    <label for="txtNombre">Nombre:</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="txtNombre" id="txtNombre"
+                                        placeholder="pon tu nombre aquí" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="txtPaterno">Paterno:</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="txtPaterno" id="txtPaterno"
+                                        placeholder="pon tu apellido paterno aquí" />
+                                </td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="txtMaterno">Materno:</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="txtMaterno" id="txtMaterno"
+                                        placeholder="pon tu apellido Materno aquí" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="txtGenero">Genero</label>
+                                </th>
+                                <td>
+                                    <input type="radio" name="txtGenero" id="txtGenero" value="m"/> Masculino
+                                    <input type="radio" name="txtGenero" id="txtGenero" value="m"/> Femenino
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <strong>Datos Generales</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="entidad">Entidad Federativa</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="entidad" id="entidad" list="entidades" />
+                                    <datalist id="entidades">
+                                        <option> Oaxaca</option>
+                                        <option> Veracruz</option>
+                                        <option> Puebla</option>
+                                        <option> Chiapas</option>
+                                        <option value="Guanajuato"> </option>
+
+
+                                    </datalist>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Municipio
+                                </th>
+                                <td>
+                                    <select name="cboMunicipios" id="cboMunicipios">
+                                        <option value="1">Gustavo A madero</option>
+                                        <option value="2">Venustino Carranza</option>
+                                        <option value="3">Alvaro Obregon</option>
+                                        <option value="4">Milpa Alta</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Mas Elementos
+                                </td>
+                            </tr>
+                           <tr>
+                               <td>
+                                   <label for="URL">URL:</label>
+                               </td>
+                               <td>
+                                   <input type="url" name="txtURL" placeholder="https://www.youtube.com/watch?v=5e1zT7miep8" required/>
+                               </td>
+                           </tr>
+
+                         
+
+                           <tr>
+                               <td>
+                                email
+                               </td>
+                               <td>
+                                <input type="email" name="txtMail" id="txtMail"
+                                placeholder="mail@mail.com" required
+                            />
+                               
+                            </td>
+                           </tr>
+                           <tr>
+                               <td>range</td>
+                               <td>
+                                   <input type="range" name="txtRango" min="0" max="100" value="20">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>Number</td>
+                               <td>
+                                   <input type="number" name="txtEdad" id="txtEdad" min="0" max="100" value="40" step="5" >
+                               </td>
+                           </tr>
+                           <tr>
+                               <td> Fecha</td>
+                               <td>
+                                   <input type="date" name="txtFecha" id="txtFecha">
+                               </td>
+                           </tr>
+
+                           <tr>
+                               
+                            <td>
+                                <input type="submit" value="ENVIAR">
+                            </td>
+                        </tr>
+
+                        </table>
+                    </fieldset>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Real Verona, Tecamac
+        </address>
+        <small>
+            &copy; Derechos Reservados 20222
+            <a href="mailto:regina.elizaldeb@gmail.com">Contactame</a>
+        </small>
+
+    </footer>
+</body>
+
+</html>
