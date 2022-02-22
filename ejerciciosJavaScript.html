@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpart" content="width-device-width, initial-scale=1.0">
+    <title>Elementos de formulario</title>
+    <style>
+        .cont {
+            border: 1px solid black;
+            padding: 15px;
+            margin-left: 350px;
+            margin-right: 350px;
+            margin-top: 30px;
+            background-color: #C8A2C8;
+        }
+
+        .subcont {
+            width: 45%;
+            text-align: center;
+
+        }
+
+        #boton {
+            width: 24%;
+            color: white;
+            background-color: #4c2882;
+            height: 5%;
+            font-size: 16px;
+        }
+    </style>
+
+    <script>
+        function contenido(id) {
+            return document.getElementById(id);
+        }
+
+        function CalcularPromedio() {
+            var n1 = parseInt(contenido('n1').value);
+            var n2 = parseInt(contenido('n2').value);
+            var n3 = parseInt(contenido('n3').value);
+            var total = (n1 + n2 + n3) / 3;
+            contenido('promedio').value = total;
+        }
+    </script>
+</head>
+
+<body bgcolor="pink">
+
+    <header>
+        <h1>
+            JavaScript || Ejercicios
+        </h1>
+    </header>
+
+    <nav>
+        <a href="P2.html">HOME</a>|
+        <a href="pasatiempos.html">pasatiempos</a>
+        <a href="fotos.html">Fotos|</a>
+        <a href="videos.html">Videos|</a>
+        <a href="contacto.html">Contactame|</a>
+        <a href="ejerciciosJavaScript.html">JavaScript</a>
+    </nav>
+
+
+    <main>
+        <section>
+            <p>
+            <h2>Promedio de 3 números</h2>
+            </p>
+            <article>
+
+                <div class="cont" align="center">
+                    <p>Ingrese sus tres numeros</p>
+                    <input type="text" id="n1" placeholder="Numero 1" />
+                    <input type="text" id="n2" placeholder="Numero 2" />
+                    <input type="text" id="n3" placeholder="Numero 3" /><br><br>
+                </div>
+                <div class="cont" align="center">
+                    <input type="text" id="promedio" class="subcont" placeholder="promedio" /> <br><br>
+                    <button id="boton" onclick="CalcularPromedio()">Calcular</button>
+                </div>
+            </article>
+        </section>
+        <section>
+            <p>
+            <h2>Números pares en serie de números 1-100</h2>
+            </p>
+            <div class="cont">
+                <script>
+                    let i = 0;
+                    for (i = 0; i <= 100; i++) {
+                        if (i % 2 == 0) {
+                            document.write(i + " ");
+                        }
+
+
+                    }
+                </script>
+
+            </div>
+           
+        </section>
+        <section>
+
+            <article>
+                    <h2> Suma de números pares en serie de números 1-100</h2>
+                        <div class="cont">
+                            <script>
+                                let a = 0;
+                                let sum=0;
+                                for (a = 0; a <= 100; a++) {
+                                    if (a % 2 == 0) {
+                                       sum=sum+a;
+                                       document.write(sum + " ");
+                                    }     
+                                }
+                                
+                            </script>
+                        </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Real Verona, Tecamac
+        </address>
+        <small>
+            &copy; Derechos Reservados 20222
+            <a href="mailto:regina.elizaldeb@gmail.com">Contactame</a>
+        </small>
+
+    </footer>
+</body>
+
+</html>
